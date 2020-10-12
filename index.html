@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <h1 class="title">Novel Coronavirus Live Tracker</h1>
+  <div class="container">
+    <!-- Card stats -->
+    <div class="country">
+      <div class="name">Loading...</div>
+      <div class="change-country">Change</div>
+      <div class="search-country hide">
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="Search Country..." />
+        </div>
+        <div class="country-list"></div>
+      </div>
+    </div>
+    <div class="card card-stats">
+      <!-- Card body -->
+      <div class="card-body">
+        <div class="col">
+          <h5 class="card-title text-uppercase text-muted">Total Cases</h5>
+          <div class="total-cases">
+            <span class="h2 font-weight-bold total_cases color-red count value">0</span>
+          </div>
+        </div>
+        <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+          <i class="fas fa-users"></i>
+        </div>
+      </div>
+    </div>
+    <div class="card card-stats">
+      <!-- Card body -->
+      <div class="card-body">
+        <div class="col">
+          <h5 class="card-title text-uppercase text-muted">Deaths</h5>
+          <div class="deaths">
+              <span class="h2 font-weight-bold deaths color-blue count value">0</span>
+              <div class="new-value">+0</div>
+          </div>
+
+        </div>
+        <div class="icon icon-shape bg-gradient-blue text-white rounded-circle shadow">
+          <i class="fas fa-procedures"></i>
+        </div>
+      </div>
+    </div>
+    <div class="card card-stats">
+      <!-- Card body -->
+      <div class="card-body">
+        <div class="col">
+          <h5 class="card-title text-uppercase text-muted">Recovered</h5>
+          <div class="recovered">
+            <span class="h2 font-weight-bold recovered color-green count value">0</span>
+            <div class="new-value">+0</div>
+        </div>
+        </div>
+        <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+          <i class="fas fa-child"></i>
+        </div>
+      </div>
+    </div>
+    <div class="card card-stats">
+      <!-- Card body -->
+      <div class="card-body">
+        <div class="col">
+          <h5 class="card-title text-uppercase text-muted">New Cases Today</h5>
+          <div class="total-cases">
+            <div class="h2 font-weight-bold total_cases color-red count new-value">+0</div>
+          </div>
+        </div>
+        <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+          <i class="fas fa-bell"></i>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+  <script src="countries.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
